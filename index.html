@@ -5,3 +5,33 @@
     <link rel="stylesheet" href="style.css" />
     <title>Milk Assignment</title>
   </head>
+
+  <body>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Month</th>
+          <th>Volume (In Litres)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="inputs">
+      <label for="price">
+        Price (Ksh)
+        <input id="price" type="number" name="price" />
+      </label>
+    </div>
+    <div class="actions">
+      <button id="show-weekly-income" type="button">Show Weekly Income</button>
+      <button id="show-monthly-income" type="button">
+        Show Monthly Income
+      </button>
+      <button id="show-yearly-income" type="button">Show Yearly Income</button>
+    </div>
+
+    <div id="results"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
