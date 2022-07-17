@@ -69,7 +69,7 @@ const TOTAL_PRODUCTION = [
   }
   
   function handleWeeklyIncome() {
-    // Study about adding and handling DOM events in JavaScript
+    //  adding events 
     document
       .querySelector("#show-weekly-income")
       .addEventListener("click", showWeeklyIncome);
