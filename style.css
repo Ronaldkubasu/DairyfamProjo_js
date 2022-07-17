@@ -1,3 +1,8 @@
+body{
+    font-size: 20px;
+    background-color: azure;
+}
+
 table,
 tbody,
 tr,
@@ -5,7 +10,7 @@ th,
 td {
   border: 1px solid black;
   height: 50%;
-  width: 50%;
+  width: 60%;
 }
 
 #actions{
