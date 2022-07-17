@@ -37,3 +37,56 @@ const TOTAL_PRODUCTION = [
     }
   }
   
+
+  function incomeOverTime(sellingPrice, time) {
+    // Study Array methods in JavaScript.
+    // Alternatively, you can replace this with a regular for loop. The results will be the same.
+    const totalVolume = TOTAL_PRODUCTION.reduce(
+      (total, prod) => total + prod.volume,
+      0
+    );
+  
+    const volumePerWeek = totalVolume / time;
+    return sellingPrice * volumePerWeek;
+  }
+  
+  // 1. Weekly
+  
+  function calculateWeeklyIncome() {
+    const price = priceInput.value;
+  
+    // Please improve to be more accurate i.e. account for various # of days in
+    // a month such as (31,30,29)
+    const totalNumberOfWeeks = TOTAL_PRODUCTION.length * 4;
+  
+    return incomeOverTime(price, totalNumberOfWeeks);
+  }
+  
+  function showWeeklyIncome() {
+    const income = calculateWeeklyIncome();
+    // Study Template String
+    resultsEl.textContent = `Your weekly icome will be ksh ${income}`;
+  }
+  
+  function handleWeeklyIncome() {
+    // Study about adding and handling DOM events in JavaScript
+    document
+      .querySelector("#show-weekly-income")
+      .addEventListener("click", showWeeklyIncome);
+  }
+  
+  // 2. Monthly
+  
+  // 3. Yearly
+  
+  // 4. Generate Report
+  
+  // 5. Comparison,
+  
+  function init() {
+    displayTotalProduction();
+    handleWeeklyIncome();
+  }
+  
+  init();
+  
