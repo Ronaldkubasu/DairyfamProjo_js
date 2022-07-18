@@ -120,9 +120,15 @@ ul li a:hover{
   padding-bottom: 50px; 
 }
 
-.actions{
+#show-weekly-income, #show-monthly-income, #show-yearly-income{
     justify-content: space-between;
     padding: 20px 5px;
+    border: 40px;
+    margin: 4px 2px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 20px;
 }
 
 
@@ -142,7 +148,12 @@ ul li a:hover{
 
 
 
-#results{
+#results, .head{
     height: 20%;
-    background-color: aqua;
+background-color: azure;
+    position: absolute;
+  right: 150px;  
+  width: 20%;
+  height: 20%;
+  border: 5px solid;
 }
