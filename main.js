@@ -19,7 +19,7 @@ const TOTAL_PRODUCTION = [
   const priceInput = document.querySelector("#price");
   
   function displayTotalProduction() {
-    // Study DOM manipulation in JavaScript
+    
     for (const [index, production] of TOTAL_PRODUCTION.entries()) {
       const row = document.createElement("tr");
       const idCol = document.createElement("td");
@@ -39,8 +39,8 @@ const TOTAL_PRODUCTION = [
   
 
   function incomeOverTime(sellingPrice, time) {
-    // Study Array methods in JavaScript.
-    // Alternatively, you can replace this with a regular for loop. The results will be the same.
+  
+ 
     const totalVolume = TOTAL_PRODUCTION.reduce(
       (total, prod) => total + prod.volume,
       0
@@ -55,8 +55,7 @@ const TOTAL_PRODUCTION = [
   function calculateWeeklyIncome() {
     const price = priceInput.value;
   
-    // Please improve to be more accurate i.e. account for various # of days in
-    // a month such as (31,30,29)
+   
     const totalNumberOfWeeks = TOTAL_PRODUCTION.length * 4;
   
     return incomeOverTime(price, totalNumberOfWeeks);
@@ -64,7 +63,7 @@ const TOTAL_PRODUCTION = [
   
   function showWeeklyIncome() {
     const income = calculateWeeklyIncome();
-    // Study Template String
+    // Template String
     resultsEl.textContent = `Your weekly icome will be ksh ${income}`;
   }
   
@@ -76,7 +75,7 @@ const TOTAL_PRODUCTION = [
   }
   
   // 2. Monthly
-  
+
   // 3. Yearly
   
   // 4. Generate Report
