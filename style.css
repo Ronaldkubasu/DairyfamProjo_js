@@ -13,16 +13,117 @@ td {
   width: 60%;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background-image: url(./assets/cows.jpg);
+    height: 100vh;
+    background-size: cover ;
+    background-position: center;
+}
+
+
+ul li.active a{
+    background-color: palevioletred;
+    color: wheat;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    padding: initial;
+}
+
+
+ul li{
+    display: inline-block;
+    
+}
+
+
+ul li a{
+    text-decoration: solid;
+    color: tomato;
+    padding: 5px 20px;
+    border: 1px solid wheat;
+    transition: unset;
+}
+
+
+ul li a:hover{
+    background-color: lightslategray;
+    color: wheat;
+}
+
+.logo2 img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.title h1{
+    color: red;
+    font-size: 50px;
+    
+}
+
+.button{
+    color: violet;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn{
+    border: 1px solid red;
+    padding: 10px 30px;
+    color: violet;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    color: seagreen;
+    background-color: darkkhaki;
+}
+
+
+.hrd{
+    height: 100px;
+}
+
 .cow{
   font-size: 100px;
   background-image: url(./assets/cows.jpg);
   height: 100vh;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
 }
 
 .actions{
     justify-content: space-between;
 }
+
 
 .header{
     font-size: 50px;
@@ -30,7 +131,15 @@ td {
     text-align: center;
     color: green;
     text-decoration-line: underline;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+
 
 #results{
     height: 20%;
