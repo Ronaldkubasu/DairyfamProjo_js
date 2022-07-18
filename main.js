@@ -54,8 +54,8 @@ const TOTAL_PRODUCTION = [
   
   function calculateWeeklyIncome() {
     const price = priceInput.value;
-  
-   
+
+    
     const totalNumberOfWeeks = TOTAL_PRODUCTION.length * 4;
   
     return incomeOverTime(price, totalNumberOfWeeks);
@@ -66,7 +66,8 @@ const TOTAL_PRODUCTION = [
     // Template String
     resultsEl.textContent = `Your weekly icome will be ksh ${income}`;
   }
-  
+
+
   function handleWeeklyIncome() {
     //  adding events 
     document
