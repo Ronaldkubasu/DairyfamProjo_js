@@ -8,12 +8,20 @@ tbody,
 tr,
 th,
 td {
-  border: 1px solid black;
-  height: 50%;
+  border: 5px solid black;
+  height: 80%;
   width: 60%;
 }
 
-#actions{
+.cow{
+  font-size: 100px;
+  background-color: brown;
+  background-image: url(./assets/cows.jpg);
+  height: 100vh;
+  padding-bottom: 50px;
+}
+
+.actions{
     justify-content: space-between;
 }
 
@@ -25,3 +33,7 @@ td {
     text-decoration-line: underline;
 }
 
+#results{
+    height: 20%;
+    background-color: aqua;
+}
